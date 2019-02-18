@@ -22,7 +22,7 @@ public class Simulation {
         for(int i = bins.getStartRange(); i <= bins.getEndRange(); i++) {
             int result = bins.getBin(i);
             double avg = (double)result / numberOfTries;
-            String str = String.format("%2d :%8d: %.2f %s", i, result, avg, getStarsForRow(i));
+            String str = String.format("%2d :%8d: %.2f %s  ", i, result, avg, getStarsForRow(i));
             System.out.println(str);
         }
 
